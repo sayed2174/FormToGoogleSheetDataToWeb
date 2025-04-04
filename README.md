@@ -1,12 +1,77 @@
-# React + Vite
+# 📊 Google Sheet Data Extractor via Google Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based tool that extracts data from **Google Sheets** (populated through **Google Forms**) and displays it on a beautiful **React + Vite** frontend. Includes a download button to export the displayed data into **Excel (.xlsx)** format — all in one click!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ Fetches responses from a public **Google Sheet**
+- ✅ Clean and responsive UI with **Bootstrap** + **TailwindCSS**
+- ✅ Button to **download data as Excel (.xlsx)** using the `xlsx` package
+- ✅ Component styling with `clsx` and `tailwind-merge` for utility-class merging
+- ✅ Icon support via **lucide-react**
+- ✅ Fast, modern development environment with **Vite + React**
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰 Tech Stack
+
+| Tech               | Usage                           |
+|--------------------|----------------------------------|
+| **Vite + React**   | Frontend app setup               |
+| **Bootstrap 5**    | Basic layout and styling         |
+| **TailwindCSS**    | Utility-first custom styling     |
+| **clsx**           | Conditional className merging    |
+| **tailwind-merge** | Class conflict resolution        |
+| **lucide-react**   | Clean, modern icons              |
+| **xlsx**           | Generate Excel downloads         |
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/google-sheet-data-extractor.git
+cd google-sheet-data-extractor
+npm install
+npm run dev
+```
+
+---
+
+## 📝 How It Works
+
+1. A **Google Form** is linked to a **Google Sheet** where all responses are stored.
+2. The React frontend fetches this sheet as JSON (via [Google Visualization API](https://developers.google.com/chart/interactive/docs/querylanguage) or a custom endpoint).
+3. The data is parsed and displayed in a table.
+4. Clicking the **"Download as Excel"** button converts the data to `.xlsx` using the `xlsx` package and starts the download.
+
+---
+
+## 📸 Screenshots
+
+| Web View | Excel Export |
+|----------|--------------|
+| ![Web Screenshot](your-screenshot-link) | ![Excel Screenshot](your-screenshot-link) |
+
+---
+
+## 🧠 Future Improvements
+
+- 🔒 Authentication for private sheets
+- 📊 Chart visualizations of the data
+- 🔍 Filters and sorting options
+- 🌐 Deploy on Vercel/Netlify
+
+---
+
+## 🙌 Credits
+
+Built with ❤️ using open source tools and caffeine ☕.
+
+---
+
+## 📄 License
+
+[MIT](LICENSE)
