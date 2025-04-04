@@ -32,7 +32,7 @@ A web-based tool that extracts data from **Google Sheets** (populated through **
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/google-sheet-data-extractor.git
+git clone https://github.com/sayed2174/FormToGoogleSheetDataToWeb.git
 cd google-sheet-data-extractor
 npm install
 npm run dev
